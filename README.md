@@ -6,7 +6,7 @@ This repository is a structured and deeply thought-out journey of my **Data Stru
 
 ## 🚀 Course Followed
 
-This repository follows the structure of  **[Striver's A2Z DSA Course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/)**  Stiver's A2Z DSA Course by Raj Vikramaditya.
+This repository follows the structure of  **[Striver's A2Z DSA Course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/)**   by Raj Vikramaditya (STRIVER).
 offered by **[TakeUForward](https://takeuforward.org/)**.
 
 ---
@@ -47,4 +47,4 @@ DSA-by-heart/
 │
 └── README.md
 ```
-### ENJOY THE DSA RIDE
+### ENJOY THE DSA RIDE 👍
