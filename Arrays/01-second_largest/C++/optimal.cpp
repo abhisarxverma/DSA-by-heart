@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 
 /*
@@ -10,7 +11,7 @@ TIME COMPLEXITY - O(N)
 SPACE COMPLEXITY - O(1)
 */
 
-int find_second_largest_brute( vector<int> array ){
+int find_second_largest_optimal( vector<int> array ){
     int largest = INT_MIN;
     int second_largest = INT_MIN;
     for (auto num: array){
@@ -27,6 +28,6 @@ int find_second_largest_brute( vector<int> array ){
 
 int main() {
     vector<int> vec = {2, 5, 6, 1, 0};
-    cout << "Second largest : " << find_second_largest_brute(vec) << endl;
+    cout << "Second largest : " << find_second_largest_optimal(vec) << endl;
     return 0;
 }

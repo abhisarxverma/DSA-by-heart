@@ -1,3 +1,4 @@
+from typing import List
 
 # Optimal Approach
 # ---------------------
@@ -5,7 +6,7 @@
 # TIME COMPLEXITY - O(N)
 # SPACE COMPLEXITY - O(1)
 
-def find_second_largest_optimal( array ):
+def find_second_largest_optimal( array : List[int] ) -> int :
     largest = float("-inf")
     second_largest = float("-inf")
     for num in array:

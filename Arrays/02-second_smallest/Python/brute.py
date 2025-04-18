@@ -6,11 +6,11 @@ from typing import List
 # TIME COMPLEXITY - O(N LOGN) - due to sorting
 # SPACE COMPLEXITY - O(N) - to store the sorted array
 
-def find_second_largest_brute( array : List[int] ) -> int :
+def find_second_smallest_brute( array : List[int] ) -> int :
     sorted_array = sorted(set(array), reverse=True)
-    return sorted_array[1] if len(sorted_array) > 1 else None
+    return sorted_array[-2] if len(sorted_array) > 1 else None
 
 
 # CHECK
 arr = [2, 1, 5, 9, 100]
-print(f"Second Largest in {arr} : {find_second_largest_brute(arr)}")
+print(f"Second smallest in {arr} : {find_second_smallest_brute(arr)}")
