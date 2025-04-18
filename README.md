@@ -1,15 +1,26 @@
 # 🧠 DSA-by-Heart
 
-## DSA in two languages : PYTHON AND C++
-
 This repository is a structured and deeply thought-out journey of my **Data Structures & Algorithms** learning — solved by heart, not just syntax.
 
 ---
 
 ## 🚀 Course Followed
 
-This DSA repository is a **follow-along with [Striver's A2Z DSA Course](https://takeuforward.org/interviews/strivers-dsa-sheet-top-coding-interview-problems/)**  
-provided by [TakeUForward](https://takeuforward.org). The structure and problem order exactly mirror the course.
+This repository follows the structure of  
+**[Striver's A2Z DSA Course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/)**  
+offered by **[TakeUForward](https://takeuforward.org/)**.
+
+---
+
+## 📚 What’s Included?
+
+This repository covers **every major topic** in DSA, and for each problem, you will find:
+
+- 🔹 **Brute-force** solution  
+- 🔹 **Better** approach  
+- 🔹 **Optimal** approach  
+
+Each solution is written with clear intent to build real intuition behind problem-solving.
 
 ---
 
