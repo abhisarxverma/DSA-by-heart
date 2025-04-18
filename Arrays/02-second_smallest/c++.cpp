@@ -1,12 +1,26 @@
 #include <iostream>
 #include <vector>
 #include <climits>
+#include <algorithm>
 using namespace std;
+
+/*
+Brute Force Approach
+---------------------
+LOGIC - Sort the array then give the second last element if any
+TIME COMPLEXITY - O(N LOGN) - due to sorting
+SPACE COMPLEXITY - O(N) - to store the sorted array
+*/
+
+int find_second_smallest_brute( vector<int> array ){
+    sort(array.begin(), array.end());
+    return array.size() > 1 ? array[array.size()-2] : NULL;
+}
 
 /*
 Optimal Approach
 ---------------------
-INTUITION - Take the smallest and the second smallest variables and update both of them as per conditions
+LOGIC - Take the smallest and the second smallest variables and update both of them as per conditions
 TIME COMPLEXITY - O(N)
 SPACE COMPLEXITY - O(1)
 */
@@ -27,7 +41,7 @@ int find_second_smallest_optimal( vector<int> array ){
 }
 
 int main() {
-    vector<int> vec = {0};
+    vector<int> vec = {1, 5, 9, 0, 6, 2};
     cout << "Second smallest : " << find_second_smallest_optimal(vec) << endl;
     return 0;
 }

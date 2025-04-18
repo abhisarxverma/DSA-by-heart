@@ -1,4 +1,4 @@
-# Problem: Remove the duplicate elements form the array
+# Problem: Remove the duplicate elements form the sorted array
 
 ## ✅ Brute
 - Logic - use a set to store the seen numbers and if the number is not seen then add that into vector

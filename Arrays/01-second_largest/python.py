@@ -1,5 +1,15 @@
 from typing import List
 
+# Brute Force Approach
+# ---------------------
+# INTUITION - Sort the array then give the second element if any
+# TIME COMPLEXITY - O(N LOGN) - due to sorting
+# SPACE COMPLEXITY - O(N) - to store the sorted array
+
+def find_second_largest_brute( array : List[int] ) -> int :
+    sorted_array = sorted(set(array), reverse=True)
+    return sorted_array[1] if len(sorted_array) > 1 else None
+
 # Optimal Approach
 # ---------------------
 # INTUITION - Take the largest and the second largest variables and update both of them as per conditions
