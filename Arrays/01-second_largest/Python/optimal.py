@@ -13,7 +13,7 @@ def find_second_largest_optimal( array : List[int] ) -> int :
         if num > largest: 
             second_largest = largest
             largest = num
-        elif num > second_largest:
+        elif num > second_largest and num < largest:
             second_largest = num
     
     return second_largest if second_largest != float("-inf") else None

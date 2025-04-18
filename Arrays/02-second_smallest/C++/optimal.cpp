@@ -19,7 +19,7 @@ int find_second_smallest_optimal( vector<int> array ){
             second_smallest = smallest;
             smallest = num;
         }
-        else if (num < second_smallest){
+        else if (num < second_smallest && num > smallest){
             second_smallest = num;
         }
     }   

@@ -19,7 +19,7 @@ int find_second_largest_optimal( vector<int> array ){
             second_largest = largest;
             largest = num;
         }
-        else if (num > second_largest){
+        else if (num > second_largest && num < largest){
             second_largest = num;
         }
     }   

@@ -6,7 +6,17 @@
 - Space Complexity: O(N) sorted array
 
 ## ✅ Optimal
-- Logic: Take two variables smallest and second smallest, loop the array, if the number is smaller than smallest then store the smallest in the second smallest and make the smallest that number and if the number is not smaller than the smallest then check if it is smaller than second smallest because it may be the case where any number is not smaller than the smallest but is smaller than the second smallest and in that case the second smallest should be updated to that number. OVER.
+- Logic:
+1. **Initialize two variables**:
+   - `smallest`: Tracks the smallest number.
+   - `second_smallest`: Tracks the second smallest number.
+
+2. **Loop through the array**:
+   - If the current number is **smaller than `smallest`**:
+     - Assign `smallest` to `second_smallest`.
+     - Update `smallest` to the current number.
+   - Otherwise, if the current number is **smaller than `second_smallest`** (but not equal to `smallest`):
+     - Update `second_smallest` to the current number.
 
 - Time Complexity : O(N) - one pass
 - Space Complexity : O(1) 
