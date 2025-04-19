@@ -9,7 +9,7 @@
 - TIME COMPLEXITY - O(N)
 - SPACE COMPLEXITY - O(1)
 
-## ✅ Optimal approach
+## ✅ Better approach
 
 - LOGIC - XOR concept, if you XOR same numbers the result will be 0 and if you XOR a number with zero, you will get
 the number itself. So if you do XOR of the array, the numbers will cancel out and the single number will be left out.

@@ -27,7 +27,7 @@ int find_single_number_brute( vector<int> array ){
 }
 
 /*
-Optimal Approach
+Better Approach
 ---------------------
 LOGIC - XOR concept, if you XOR same numbers the result will be 0 and if you XOR a number with zero, you will get
 the number itself. So if you do XOR of the array, the numbers will cancel out and the single number will be left out.
@@ -36,7 +36,7 @@ TIME COMPLEXITY - O(N)
 SPACE COMPLEXITY - O(1)
 */
 
-int findSingleNumberXOR( vector<int> a ){
+int find_single_number_better( vector<int> a ){
     int xor1 = 0;
     for (int i = 0; i < a.size(); i++){
         xor1 = xor1 ^ a[i];
