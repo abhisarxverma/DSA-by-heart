@@ -18,12 +18,23 @@ of a number, we have to check if the target is met, else pass.
 - TIME COMPLEXITY - O(N)
 - SPACE COMPLEXITY - O(N) hashmap
 
-## ✅ Optimal approach ***( To get the answer pair indexes the better approach is the optimal )***
+## ✅ Optimal approach *Boyre-Moore's Voting algorithm*
 
-- LOGIC - Boore-Moyre's voting algorithm, the concept is if a number has count greater than half the size
-of array, then while iterating and increasing the count if we find the same number and descreasing the
-count if we find other than that, then at last the majority number should be remaining, cause it is one extra than
-half the size so no other can cancel out it.
+- LOGIC -
+- 
+1. **Majority Element Condition**  
+   - If an element appears **more than half the size of the array**, it must remain by the end of the process.
+
+2. **Tracking Candidate Element**  
+   - Initialize a **candidate** variable and a **count** tracker.
+   - Traverse the array:
+     - **Increase count** if the current element matches the candidate.
+     - **Decrease count** if the current element differs from the candidate.
+     - If count reaches **zero**, update the candidate to the current element and reset count.
+
+3. **Final Result**  
+   - By the end of the iteration, the majority element remains because its occurrences exceed half of the array size.
+   - Optional verification: A second pass can confirm if the candidate truly appears more than ⌊N/2⌋ times.
 
 - TIME COMPLEXITY - O(N)
 - SPACE COMPLEXITY - O(1)
