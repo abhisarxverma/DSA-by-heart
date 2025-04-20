@@ -21,7 +21,7 @@ of a number, we have to check if the target is met, else pass.
 ## ✅ Optimal approach *Boyre-Moore's Voting algorithm*
 
 - LOGIC -
-- 
+  
 1. **Majority Element Condition**  
    - If an element appears **more than half the size of the array**, it must remain by the end of the process.
 
