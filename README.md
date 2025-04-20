@@ -6,13 +6,12 @@ This repository is a structured and deeply thought-out journey of my **Data Stru
 
 ## 📚 What is my thinking process?
 
-- 🔹 **Brute-force** solution
-            ⬇
-- 🔹 **Better** approach
-            ⬇
+- 🔹 **Brute-force** solution 
+- 🔹 **Better** approach  
 - 🔹 **Optimal** approach  
 
 ***This repository covers **every major topic** in DSA, in both PYTHON AND C++ and for each problem***
+
 ***Each solution is written with clear intent to build real intuition behind problem-solving.***
 
 ---
