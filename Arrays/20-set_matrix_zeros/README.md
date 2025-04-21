@@ -1,11 +1,19 @@
 # PROBLEM - Given a matrix of zeros and ones, make all the numbers of the row and column zero, if a zero is present.
 
-###     EXAMPLE INPUT MATRIX      EXAMPLE OUTPUT MATRIX
-###        1, 1, 1, 1, 1             0, 0, 1, 0, 0
-###        0, 1, 1, 0, 1             0, 0, 0, 0, 0
-###        1, 1, 1, 1, 0             0, 0, 1, 0, 0
-###        1, 0, 1, 1, 1             0, 0, 0, 0, 0
-###        1, 1, 1, 1, 1             0, 0, 1, 0, 0
+###     EXAMPLE INPUT MATRIX  
+###        1, 1, 1, 1, 1         
+###        0, 1, 1, 0, 1         
+###        1, 1, 1, 1, 0         
+###        1, 0, 1, 1, 1         
+###        1, 1, 1, 1, 1  
+
+###    EXAMPLE OUTPUT MATRIX
+###        0, 0, 1, 0, 0
+###        0, 0, 0, 0, 0
+###        0, 0, 1, 0, 0
+###        0, 0, 0, 0, 0
+###        0, 0, 1, 0, 0
+
 
 ## ✅ Brute Approach
 
