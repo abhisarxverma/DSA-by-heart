@@ -2,6 +2,7 @@
     "files.associations": {
         "vector": "cpp",
         "set": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "unordered_set": "cpp"
     }
 }
