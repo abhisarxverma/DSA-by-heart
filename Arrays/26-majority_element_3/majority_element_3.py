@@ -96,10 +96,13 @@ def majority_element_3_optimal( array : List[int] ):
         elif num == number2: count2+=1
 
     target = (n/3)+1
-    if count1 >= target and count2 >= target:
-        return [number1, number2]
+    res = []
+    if count1 >= target:
+        res.append(number1)
+    if count2 >= target:
+        res.append(number2)
+    return res if res else [-1, -1]
 
-    return [-1, -1]
 
 arr = [2, 2, 5, 5, 2, 5, 9, 5, 2]
 majority_elements = majority_element_3_brute(arr)
