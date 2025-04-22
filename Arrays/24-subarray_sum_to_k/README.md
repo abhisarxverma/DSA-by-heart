@@ -12,7 +12,7 @@ is equal to k if yes increment the count.
 - TIME COMPLEXITY - O(N^2)
 - SPACE COMPLEXITY - O(1)
 
-## ✅ Optimal Approach
+## ✅ Optimal Approach - PREFIX SUM 
 
 - LOGIC -
     1. Use a **HashMap** to store cumulative sums encountered while iterating.
