@@ -40,7 +40,7 @@
     - Sort the triplet before storing it in a result structure to ensure uniqueness.
 
 - **TIME COMPLEXITY** - O(N²) *(Improved from O(N³))*
-- **SPACE COMPLEXITY** - O(N) *Extra Space (For storing visited elements in a set)*
+- **SPACE COMPLEXITY** - O(N^4) *Extra Space (For storing visited elements in a set)*
 
 ## ✅ Optimal Approach
 
