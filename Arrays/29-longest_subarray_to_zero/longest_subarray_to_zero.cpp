@@ -28,6 +28,7 @@ int longest_subarray_to_zero_brute( vector<int> array ){
     for (int i = 0; i < n; i++){
         int temp_length = 1;
         int sum = array[i];
+        if ( sum == 0 ) final_length = max(final_length, temp_length);
         for ( int j = i+1; j < n; j++){
             temp_length++;
             sum += array[j];

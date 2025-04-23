@@ -22,6 +22,7 @@ def longest_subarray_to_zero_brute( array : List[int] ):
     final_length = 0
     for i in range(n):
         sum = array[i]
+        if sum == 0: final_length = max(final_length, 1)
         for j in range(i+1, n):
             sum += array[j]
             if sum == 0:
