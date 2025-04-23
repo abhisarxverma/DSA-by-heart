@@ -1,6 +1,6 @@
 # PROBLEM - PROBLEMS ON PASCALS'S TRIANGLE
 
-## Sub problem 1 - Given the row number and the column number return the number in the pascal's triangle
+## Sub problem 1 - Given the row number and the column number return the number in the pascal's triangle get the number in that place in the pascal's triangle.
 
 ### ✅ Brute Approach
 
