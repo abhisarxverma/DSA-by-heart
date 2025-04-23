@@ -2,19 +2,11 @@
 #include <vector>
 #include <climits>
 #include <set>
+#include <algorithm>
 #include <unordered_set>
 using namespace std;
 
 // PROBLEM - Given an array of integers, find the and return all the triplets that have the sum 0
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <climits>
-#include <unordered_map>
-using namespace std;
-
-// PROBLEM - Given an array, find the number which appears more than one-third of the size of the array
 
 /*
  EXAMPLE INPUT - 3, 5, -1, 5, -10, -8, 5, 0
