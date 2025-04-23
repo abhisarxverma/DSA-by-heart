@@ -6,7 +6,7 @@
 #include <unordered_set>
 using namespace std;
 
-// PROBLEM - Given an array of integers, find the and return all the triplets that have the sum 0
+// PROBLEM - Given an array of integers, find and return all the triplets that have the sum 0
 
 /*
  EXAMPLE INPUT - 3, 5, -1, 5, -10, -8, 5, 0
