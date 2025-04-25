@@ -48,6 +48,18 @@ def get_count_with_merging( array : List[int], low, mid, high ):
             b.append(array[j])
             res += mid-i+1
             j+=1
+
+    while i <= mid: 
+        b.append(array[i])
+        i+=1
+    while j <= high: 
+        b.append(array[j])
+        j+=1
+    
+
+    # Copy back merged result into original array
+    for k in range(len(b)):
+        array[low + k] = b[k]
         
     return res
     
