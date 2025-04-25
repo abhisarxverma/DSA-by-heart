@@ -1,4 +1,4 @@
-# PROBLEM - Given an array of array intervals of integers, merge the intervals.
+# PROBLEM - Given an array of intervals of integers, merge the intervals.
 
 ### EXAMPLE INPUT - {{1, 3}, {2, 6}, {8, 10}, {9, 12}}
 ### EXAMPLE OUTPUT - { {1, 6}, {8, 12} }
