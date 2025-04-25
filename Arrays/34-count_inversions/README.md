@@ -14,7 +14,9 @@ you find a pair in which the second element is smaller than the frist one.
 
 ## ✅ Optimal Approach
 
-- LOGIC - MERGE SORT APPROACH - Using the MERGESORT concept of merging the sorted arrays. while merging we will get the count by compairing the elements with the trick
+- LOGIC - MERGE SORT APPROACH -
+  1. Counting split inversions when merging two sorted halves.
+  2. Keeping track of how many elements in the right half are **smaller** than the current element in the left half.
 
 - TIME COMPLEXITY - O(N LogN) Merge sort time complexity
-- SPACE COMPLEXITY - O(N) for merging
+- SPACE COMPLEXITY - O(N) temporary space for merging
