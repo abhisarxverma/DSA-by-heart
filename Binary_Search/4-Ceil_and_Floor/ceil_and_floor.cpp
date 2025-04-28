@@ -25,7 +25,7 @@ int ceil( vector<int> array, int number ){
         else low = mid+1;
     }
 
-    return low;
+    return (low == array.size()) ? -1 : array[low];
 }
 
 /* FLOOR IMPLEMENTATION USING BINARY SEARCH */
@@ -48,7 +48,7 @@ int floor( vector<int> array, int number ){
             high = mid-1;
         }
         else if ( array[mid] <= number ) {
-            ans = mid;
+            ans = array[mid];
             low = mid+1;
         }
     }

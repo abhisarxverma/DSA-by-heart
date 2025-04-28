@@ -23,7 +23,7 @@ def ceil( array : List[int], number : int ):
         if array[mid] >= number: high = mid
         else: low = mid+1
 
-    return low
+    return array[low] if low != len(array) else -1
 
 ''' FLOOR IMPLEMENTATION USING BINARY SEARCH '''
 
@@ -44,7 +44,7 @@ def floor( array : List[int], number : int ):
         mid = low + (high-low)//2
         if array[mid] > number : high = mid-1
         else:
-            ans = mid
+            ans = array[mid]
             low = mid-1
 
     return ans
