@@ -90,7 +90,6 @@ int find_in_rotated_array_duplicates_optimal( vector<int> array, int target ){
         if ( array[low] == array[mid] == array[high] ){
             low++;
             high--;
-            continue;
         }
 
         if ( array[low] <= array[mid] ){

@@ -85,7 +85,6 @@ def find_in_rotated_duplicates_optimal( array : List[int], target : int ):
         if  array[low] == array[mid] == array[high] :
             low+=1
             high-=1
-            continue
 
         if array[low] <= array[mid] :
             if  array[low] <= array[mid] and target < array[mid] : high = mid-1
