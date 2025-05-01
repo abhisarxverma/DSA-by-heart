@@ -60,6 +60,15 @@ def find_peak_element_optimal( array : List[int] ):
 
     return -1
 
+def find_peak_element_optimal_recursive( array : List[int], low : int, high : int ):
+    mid = low + (high-low)//2
+
+    if (mid == 0 or array[mid] > array[mid-1]) and (mid == high or array[mid] > array[mid+1]) : return mid
+    
+    if mid > 0 and array[mid] > array[mid-1] :
+        return find_peak_element_optimal_recursive(array, mid+1, high)
+    else : find_peak_element_optimal_recursive(array, low, mid-1)
+
 array = [5, 4, 3, 2, 1]
 peak_element_index = find_peak_element_optimal(array)
 print(f"Peak element is at index {peak_element_index}")

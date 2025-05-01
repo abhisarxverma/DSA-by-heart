@@ -53,8 +53,17 @@ int find_peak_element_optimal( vector<int> array ){
     return -1;
 }
 
+int find_peak_element_optimal_recursive( vector<int> array, int low, int high ){
+    int mid = low + (high-low)/2;
+
+    if (( mid == 0 || array[mid] > array[mid-1]) && (mid == high || array[mid] > array[mid+1]) ) return mid;
+
+    if ( mid > 0 && array[mid] > array[mid-1] ) return find_peak_element_optimal_recursive(array, mid+1, high);
+    else return find_peak_element_optimal_recursive(array, low, mid-1);
+}
+
 int main() {
-    vector<int> array = {5, 4, 3, 2, 1};
-    int peak_element_index = find_peak_element_optimal(array);
+    vector<int> array = {1, 3, 4, 5, 4, 3, 2, 1};
+    int peak_element_index = find_peak_element_optimal_recursive(array, 0, array.size()-1);
     cout << "Peak element index: " << peak_element_index << endl;
 }
