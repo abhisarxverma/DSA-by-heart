@@ -44,10 +44,10 @@ def find_in_rotated_uniques_optimal( array : List[int], target : int ):
 
         if array[low] <= array[mid]:
             if array[low] <= target and array[mid] > target: high = mid-1
-            else low = mid+1
+            else: low = mid+1
         else:
             if array[mid] > target and array[high] >= target: low = mid+1
-            else high = mid-1
+            else: high = mid-1
 
     return -1
 
@@ -88,14 +88,14 @@ def find_in_rotated_duplicates_optimal( array : List[int], target : int ):
 
         if array[low] <= array[mid] :
             if  array[low] <= array[mid] and target < array[mid] : high = mid-1
-            else low = mid+1
+            else: low = mid+1
         
         else :
             if array[mid] < target and target <= array[high] : low = mid+1
-            else high = mid-1
+            else: high = mid-1
 
     return result
 
 array = [21, 35, 35, 93, 1, 5, 7, 7, 9, 10, 11, 15]
-ans = find_in_rotated_array_duplicates_optimal(array, 7)
+ans = find_in_rotated_duplicates_optimal(array, 7)
 print(f"Element found at {ans}" if ans != -1 else "Element not found.")
