@@ -49,8 +49,8 @@ Optimal Approach
 ---------------------
 LOGIC - Binary Search 
 We do not know that the array of weights we are given is sorted or not but what we do know is that we will find the answer between the max in array and the sum in array which is sorted space, we can easily to the binary search there.
-We will take low as max weight in the array to the sum of weights in array, cause the capacity must be able to take one but any box in array that's why the max
-And we will search till the sum of the weights cause above the sum, the days will always remain the same that is 1 and will never change, so if the answer exists, that should be sum itself or below that
+We will take low as max weight in the array, cause the capacity must be able to take one but any box in array that's why the max
+And we will search till the sum of the weights cause above the sum, the days will always remain the same that is 1 (because all the weights will get delivered in one day) and will never change, so if the answer exists, that should be sum itself or below that
 
 
 TIME COMPLEXITY - O(N * LOG[Sum(array) - Max(array)]) 
