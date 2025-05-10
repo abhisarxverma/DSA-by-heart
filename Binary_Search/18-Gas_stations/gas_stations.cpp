@@ -25,7 +25,7 @@ Recompute the biggest remaining section length after placing all stations.
 Return this value as the minimum possible largest gap after placement.
 
 TIME COMPLEXITY - O(N x K) 
-SPACE COMPLEXITY - O(1)
+SPACE COMPLEXITY - O(N) 
 */
 
 long double gas_stations_brute( vector<int> array, int k ){
@@ -79,7 +79,7 @@ Final result
 The top element of the heap gives the minimum possible largest gap after placing all stations.
 
 TIME COMPLEXITY - O(K x LogN) 
-SPACE COMPLEXITY - O(1)
+SPACE COMPLEXITY - O(N)
 */
 
 int gas_stations_better( vector<int> array, int k ){

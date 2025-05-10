@@ -16,7 +16,7 @@
     - Return this value as the minimum possible largest gap after placement.
 
 - **TIME COMPLEXITY** - ***O(N x K)***
-- **SPACE COMPLEXITY** - ***O(1)***
+- **SPACE COMPLEXITY** - ***O(N)***
 
 ## ✅ Better Approach
 
@@ -34,7 +34,7 @@
     - The top element of the heap gives the minimum possible largest gap after placing all stations.
 
 - **TIME COMPLEXITY** - ***O(K x LogN)***
-- **SPACE COMPLEXITY** - ***O(1)***
+- **SPACE COMPLEXITY** - ***O(N)***
 
 ## ✅ Optimal Approach
 
