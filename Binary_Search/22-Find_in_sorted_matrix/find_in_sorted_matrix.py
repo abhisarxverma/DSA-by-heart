@@ -36,6 +36,34 @@ def find_in_sorted_matrix_brute( matrix: List[List[int]], number: int ):
     return False
 
 '''
+Better Approach
+---------------------
+LOGIC - Check if the number really is present in that range.
+Loop over the row, compare the number we need to find to the low and high
+If the number is in that range, then do the binary search in that row and find the number
+if found return True, then return False
+
+TIME COMPLEXITY - O(N + LogM) 
+SPACE COMPLEXITY - O(1)
+'''
+
+def find_in_sorted_matrix_better( array: List[List[int]], number: int ):
+    rows = len(array)
+    cols = len(array[0])
+
+    for row in matrix:
+        if number < row[0] or number > row[-1]: continue
+        low = 0
+        high = cols-1
+        while low <= high:
+            mid = low + (high-low)//2
+            if row[mid] == number: return True
+            if row[mid] > number: high = mid-1
+            else:low = mid+1
+
+    return False
+
+'''
 Optimal Approach
 ---------------------
 LOGIC - Binary search
@@ -70,8 +98,8 @@ matrix = [
         [32, 35, 39, 40],
         [42, 45, 46, 50]
     ];
-number_to_find = 99
-if find_in_sorted_matrix_optimal(matrix, number_to_find):
+number_to_find = 42
+if find_in_sorted_matrix_better(matrix, number_to_find):
     print(f"{number_to_find} is present in matrix.")
 else:
     print(f"{number_to_find} is not present in matrix.")

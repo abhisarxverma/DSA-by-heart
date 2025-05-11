@@ -38,6 +38,36 @@ bool find_in_sorted_matrix_brute( vector<vector<int>> matrix, int number ){
 }
 
 /*
+Better Approach
+---------------------
+LOGIC - Check if the number really is present in that range.
+Loop over the row, compare the number we need to find to the low and high
+If the number is in that range, then do the binary search in that row and find the number
+if found return True, then return False
+
+TIME COMPLEXITY - O(N + LogM) 
+SPACE COMPLEXITY - O(1)
+*/
+
+bool find_in_sorted_matrix_better( vector<vector<int>> matrix, int number ){
+    int rows = matrix.size();
+    int cols = matrix[0].size();
+
+    for (auto row : matrix){
+        if (number < row[0] || number > row[-1]) continue;
+        int low = 0;
+        int high = cols-1;
+        while (low <= high){
+            int mid = low + (high-low)/2;
+            if (row[mid] == number) return true;
+            if (row[mid] > number) high = mid-1;
+            else low = mid+1;
+        }
+    }
+    return false;
+}
+
+/*
 Optimal Approach
 ---------------------
 LOGIC - Binary search

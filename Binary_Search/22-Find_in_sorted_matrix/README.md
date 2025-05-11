@@ -20,6 +20,16 @@
 - **TIME COMPLEXITY** - ***O(N x M)***
 - **SPACE COMPLEXITY** - ***O(1)***
 
+## ✅ Better Approach
+
+- **LOGIC** - *Check if the number really is present in row and if yes then do binary search.*
+    - Loop over the row, compare the number we need to find to the low and high
+    - If the number is in that range, then do the binary search in that row and find the number
+    - if found return True, then return False
+
+- **TIME COMPLEXITY** - ***O(N + LogM)***
+- **SPACE COMPLEXITY** - ***O(1)***
+
 ## ✅ Optimal Approach
 
 - **LOGIC** - *Binary search*
