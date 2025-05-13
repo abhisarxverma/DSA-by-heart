@@ -27,6 +27,9 @@ SPACE COMPLEXITY - O(1)
 '''
 
 def search_linked_list( head: Node, number: int ):
+    if not head:
+        print("Linked List is Empty!")
+        return head
     mover = head
     while mover:
         if mover.data == number: return True

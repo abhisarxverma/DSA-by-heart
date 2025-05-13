@@ -17,6 +17,10 @@ SPACE COMPLEXITY - O(1)
 */
 
 bool search_linked_list( Node *head, int number ){
+    if (!head) {
+        cout << "Linked List is Empty!" << endl;
+        return head;
+    }
     Node *mover = head;
     while (mover) {
         if (mover -> data == number) return true;
