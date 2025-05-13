@@ -17,7 +17,8 @@ PROBLEM - Given a Head Node, integer number and a positive integer which is the 
 
 APPROACH
 ---------
-LOGIC - To insert a number at the given position, we will go to one node before the node at that position
+LOGIC - To insert a number at the given position, we will go to one node before the node at that position, But before that
+Check if the head passed is null, if yes this means the linked list is empty, return the null.
 Check if the position entered is smaller to zero, if yes, print error message and return the head
 And also cause in this approach we are going to the one node before the position to insert, if the user enter the 1, then this approach may fail, so handle that case seperately.
 Take a mover pointer variable, move the mover forward using a for loop running "position - 2" times
@@ -33,6 +34,9 @@ SPACE COMPLEXITY - O(1)
 '''
 
 def insert_at_middle( head: Node, number: int, position: int ):
+    if not head:
+        print("Linked List is Empty!")
+        return head
     if position < 1:
         print("Position Invalid: Cannot be less than 1")
         return head

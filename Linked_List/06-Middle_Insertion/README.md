@@ -3,7 +3,8 @@
 ### ✅ APPROACH
 ---------------
 - **LOGIC** - *(Explaination is long but the code is small)*
-    - To insert a number at the given position, we will go to one node before the node at that position
+    - To insert a number at the given position, we will go to one node before the node at that position, but, before that,
+    - Check if the head passed is null, if yes, then this means that the linked list is empty, return the null.
     - Check if the position entered is smaller to zero, if yes, print error message and return the `head`
     - And also cause in this approach we are going to the one node before the position to insert, if the user enter the `1`, then this approach may fail, so handle that case seperately.
     - Take a `mover` pointer variable, move the `mover` forward using a for loop running "`position - 2`" times
