@@ -18,6 +18,10 @@ SPACE COMPLEXITY - O(1)
 */
 
 Node* insert_at_start( Node *head, int number ){
+    if (!head) {
+        cout << "Linked List is Empty!" << endl;
+        return head;
+    }
     head = new Node(number, head);
     return head;
 }

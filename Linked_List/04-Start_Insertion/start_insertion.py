@@ -28,5 +28,8 @@ SPACE COMPLEXITY - O(1)
 '''
 
 def insert_at_start( head: Node, number: int ) -> Node :
+    if not head: 
+        print("Linked List is Empty!")
+        return head
     head = Node(number, head)
     return head
