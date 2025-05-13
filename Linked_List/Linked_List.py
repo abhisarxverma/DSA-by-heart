@@ -4,7 +4,7 @@ class Node:
         self.data = data
         self.next = next
 
-def tarverse_linked_list( head: Node ):
+def traverse_linked_list( head: Node ):
     """Traverse and print the data of the linked list."""
     if not head: print("Linked List is Empty.")
     else:
