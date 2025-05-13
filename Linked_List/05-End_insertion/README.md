@@ -3,6 +3,8 @@
 ### ✅ APPROACH
 ---------------
 - **LOGIC** - 
+    - To insert a new node at the end of the linked list, we will go to the end node.
+    - But before that check if the `head` passed is null, if yes, this means that the linked list is empty, return `null`.
     - Take a `mover` pointer variable with the value `head`.
     - move the `mover` forward, till the next node of the `mover` becomes null.
     - Now the `mover` is the last node of the linked list.
