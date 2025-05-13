@@ -1,6 +1,6 @@
-# PROBLEM - Given a Head Node, and an integer which is the position of the node to delete in the linked list Delete the node and return the new head.
+## PROBLEM - Given a Head Node, and an integer which is the position of the node to delete in the linked list Delete the node and return the new head.
 
-## ✅ APPROACH
+### ✅ APPROACH
 ---------------
 - **LOGIC** - 
     - To delete a node at the particular position in the linked list we have to go to one node before that position
