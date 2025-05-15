@@ -23,7 +23,7 @@
 - **TIME COMPLEXITY** - ***O(N)***
 - **SPACE COMPLEXITY** - ***O(1)***
 
-### ✅ BETTER APPROACH
+### ✅ OPTIMAL APPROACH (TORTOISE HARE)
 -----------------------------
 - **LOGIC** - *Tortoise Hare Method*
     - Take a `front` mover Node
