@@ -4,7 +4,7 @@ using namespace std;
 
 /*
 PROBLEM - Given a Head Node of the Linked List, return the middle node of the linked list, in case of odd length
-and first middle in case of the even length.
+and second middle in case of the even length.
 
 BRUTE FORCE APPROACH
 ---------------------
@@ -26,7 +26,7 @@ Node *linked_list_middle_brute(Node *head){
     }
     int middle = length/2;
     Node *middle_node = head;
-    for (int i = 1; i < middle; i++) middle_node = middle_node -> next;
+    for (int i = 1; i <= middle; i++) middle_node = middle_node -> next;
     return middle_node;
 }
 
@@ -52,7 +52,7 @@ Node *linked_list_middle_better( Node *head ){
     Node *mover = head;
     while(mover){
         count++;
-        if (count>2 && count%2) middle = middle -> next;
+        if (count%2) middle = middle -> next;
         mover = mover -> next;
     }
     return middle;

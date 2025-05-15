@@ -1,4 +1,4 @@
-## PROBLEM - Given a Head Node of the Linked List, return the middle node of the linked list, exact middle in case of odd length and first middle in case of the even length.
+## PROBLEM - Given a Head Node of the Linked List, return the middle node of the linked list, exact middle in case of odd length and second or latter from the two middle's in case of the even length.
 
 ### ✅ BRUTE FORCE APPROACH
 -----------------------------

@@ -15,7 +15,7 @@ def traverse_linked_list( head: Node ):
 
 '''
 PROBLEM - Given a Head Node of the Linked List, return the middle node of the linked list, exact middle in case of odd length
-and first middle in case of the even length.
+and second middle in case of the even length.
 
 BRUTE FORCE APPROACH
 ---------------------
@@ -40,7 +40,7 @@ def linked_list_middle_brute( head: Node ):
     middle_position = length//2
     middle_node = head
 
-    for i in range(1, middle_position):
+    for i in range(0, middle_position):
         middle_node = middle_node.next
 
     return middle_node
@@ -69,7 +69,7 @@ def linked_list_middle_better( head: Node ):
 
     while mover:
         length += 1
-        if length > 2 and length % 2 : middle_node = middle_node.next
+        if length % 2 : middle_node = middle_node.next
         mover = mover.next
 
     return middle_node
