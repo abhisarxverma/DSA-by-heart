@@ -28,7 +28,7 @@
 - **LOGIC** - *Tortoise Hare Method*
     - Take a `front` mover Node
     - Take a `back` mover Node
-    - Loop till `front's next` is not `nullptr` or the `front's next's next` is not `nullptr`
+    - Loop till `front` is not `null` and the front's next is not `null`.
     - While in loop, every time
     - Move the `front` node two steps
     - Move the `back` node one step
