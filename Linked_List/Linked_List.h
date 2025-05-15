@@ -37,6 +37,19 @@ void traverse_linked_list( Node *head ){
     }
 }
 
+Node * insert_at_end( Node *head, int number ){
+    if (!head){
+        cout << "Linked List is Empty!" << endl;
+        return head;
+    }
+    Node *mover = head;
+    while (mover -> next){
+        mover = mover -> next;
+    }
+    mover -> next = new Node(number);
+    return head;
+}
+
 // Returns already created example linked list
 Node *example_linked_list() {
     
