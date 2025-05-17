@@ -23,14 +23,14 @@
     - return the head
 
 - **TIME COMPLEXITY** - ***O(N)***
-- **SPACE COMPLEXITY** - ***O(N)***
+- **SPACE COMPLEXITY** - ***O(N) Stack***
 
 
 *For using both the brute force, we have to know beforehand what type of the data is in the linked list, cause while initializing the vector or the stack or the queue, we have to predefine the type. For here I assumed that the linked list will have the integer data, but that can be of any type.*
 
 
 
-### ✅ BETTER APPROACH - *Changing links using three poitners*
+### ✅ BETTER APPROACH - *Changing links using three pointers*
 ---------------------------------------------------------------
 - **LOGIC** - Three Pointer Approach
     - Take three Node pointers - front, back and the mover
