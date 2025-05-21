@@ -65,4 +65,21 @@ Node *example_linked_list() {
     return head;
 }
 
+// Create a loop in the linked list and return the head
+Node *create_loop(Node *head, int position){
+    if (!head || position < 1) return head;
+
+    Node *loop_start = nullptr;
+    int count = 1;
+
+    Node *mover = head;
+    while (mover -> next) {
+        if ( count == position ) loop_start = mover;
+        mover = mover -> next;
+        count++;
+    }
+    mover -> next = loop_start;
+    return head;
+}
+
 #endif

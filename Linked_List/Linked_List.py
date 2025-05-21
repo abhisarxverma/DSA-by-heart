@@ -13,6 +13,21 @@ def traverse_linked_list( head: Node ):
             print(mover.data, end=" -> " if mover.next else "\n")
             mover = mover.next
 
+def create_loop( head: Node, position: int ):
+    if not head or position < 1: return head
+
+    loopstart = None
+    counter = 1
+    mover = head
+    while mover.next:
+        if counter == position: loopstart = mover
+        mover = mover.next
+        counter += 1
+
+    mover.next = loopstart
+
+    return head
+
 def example_linked_list() -> Node :
     head = Node(10)
     head.next = Node(15)
