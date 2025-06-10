@@ -55,12 +55,12 @@ Node *example_linked_list() {
     
     // Example Linked list
     Node *head = new Node(10);
-    head -> next = new Node(15);
-    head -> next -> next = new Node(20);
+    head -> next = new Node(35);
+    head -> next -> next = new Node(12);
     head -> next -> next -> next = new Node(25);
-    head -> next -> next -> next -> next = new Node(30);
-    head -> next -> next -> next -> next -> next = new Node(35);
-    head -> next -> next -> next -> next -> next -> next = new Node(40);
+    head -> next -> next -> next -> next = new Node(90);
+    head -> next -> next -> next -> next -> next = new Node(8);
+    head -> next -> next -> next -> next -> next -> next = new Node(26);
 
     return head;
 }
