@@ -131,7 +131,7 @@ SPACE COMPLEXITY - O(N) Recursion call stack
 Node *reverse_linked_list_optimal( Node *head ){
     if (!head || !head->next) return head;
     Node *reversed_head = reverse_linked_list_optimal(head -> next);
-    head = head -> next -> next;
+    head -> next -> next = head;
     head -> next = nullptr;
     return reversed_head;
 }
