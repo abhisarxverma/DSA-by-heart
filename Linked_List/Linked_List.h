@@ -82,4 +82,18 @@ Node *create_loop(Node *head, int position){
     return head;
 }
 
+Node *reverse_linked_list(Node *head) {
+    if (!head) return nullptr;
+    Node *front = nullptr;
+    Node *prev = nullptr;
+    Node *mover = head;
+    while (mover) {
+        front = mover -> next;
+        mover -> next = prev;
+        prev = mover;
+        mover = front;
+    }
+    return prev;
+}
+
 #endif
