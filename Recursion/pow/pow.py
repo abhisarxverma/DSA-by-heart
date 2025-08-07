@@ -6,43 +6,47 @@ def pow_loop_brute(x: int, n: int):
 
     res = 1
 
-    for i in range(n):
+    for _ in range(n):
         res *= x
+
+    if (n < 0) : res = 1 / res
 
     return res
 
 # Time complexity - O(Log N)
 def pow_loop_optimal(x: int, n: int):
 
-    res = 1
-    power = n
+    ans = 1
+    nn = n
+    if n < 0: nn = -1 * n
 
-    while power > 1:
+    while nn:
 
-        if power % 2 == 0:
-            res *= x*x
-            power //= 2
-        else :
-            res *= x
-            power -= 1
-    
-    return res
+        if nn % 2:
+            ans *= x    # x^n = x * x^n-1
+            nn -= 1
+        else:
+            x = x*x     # x^n = (x^2)^n/2
+            nn /= 2
+
+    if n < 0: ans = 1.0 / ans
+    return ans
 
 # Recursion
 # Time complexity - O(Log N)
 # Space complexity - Recursion Stack Space
-def pow_recursion(x: int, n: int, res:int = 1):
+def pow_recursion(x: int, n: int):
 
-    if n <= 1: return res
+    if n == 0: return 1
 
-    if n % 2 == 0:
-        res *= x*x
-        n //= 2
-    else :
-        res *= x
-        n -= 1
+    if n < 0: return pow_recursion(x, -n)
 
-    return pow_recursion(x, n, res)
+    if n % 2:
+        return x * pow_recursion(x, n-1)   # x^n = x * x^n-1
+
+    else:
+        half = pow_recursion(x, n/2)    # x^n = (x^n/2)^2
+        return half * half
 
 
 
