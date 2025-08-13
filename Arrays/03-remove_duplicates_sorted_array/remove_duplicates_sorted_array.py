@@ -19,12 +19,13 @@ def remove_duplicates_brute( array : List[int] ) -> List[int] :
 
 # Better Approach
 # ---------------------
-# INTUITION - create a new res array, and iterate over the original array, if the number not equal to the last number in the res array then push it in res array else pass.
-# TIME COMPLEXITY - O(N)
-# SPACE COMPLEXITY - O(N) - result vector
+# INTUITION - create a new res array for answer, sort the given array and iterate over that, if the number not equal to the last number in the res array then push it in res array else pass.
+# TIME COMPLEXITY - O(LogN + N) - O(LogN) to sort and O(N) to iterate over array to check for duplicates
+# SPACE COMPLEXITY - O(N) - result vector to return, otherwise O(1)
 
 def remove_duplicates_better( array : List[int] ) -> List[int] :
     if not array or len(array) == 1: return array
+    array = sorted(array)
     res = []
     for number in array:
         if not res or res[-1] != number:
@@ -50,5 +51,5 @@ def remove_duplicates_optimal( array : List[int] ) -> List[int] :
         
         
 # check
-arr = [1, 1, 2, 2, 2, 3, 4, 4, 4, 4 ,4, 9, 9]
-print(remove_duplicates_optimal(arr))
+arr = [1, 1, 2, 2, 2, 3, 0, 4, 4, 4, 4, 0,4, 9, 9]
+print(remove_duplicates_better(arr))

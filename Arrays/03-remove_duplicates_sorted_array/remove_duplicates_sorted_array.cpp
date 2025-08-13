@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include <unordered_set>
 using namespace std;
 
@@ -43,6 +44,7 @@ SPACE COMPLEXITY - O(N)
 
 vector<int> remove_duplicates_better(vector<int> array) {
     vector<int> res;
+    sort(res.begin(), res.end());
     for (int num : array) {
         if (res.empty() || num != res.back()) {
             res.push_back(num);

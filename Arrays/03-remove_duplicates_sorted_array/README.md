@@ -6,7 +6,7 @@
 - SPACE COMPLEXITY - O(2N) - set and result vector
 
 ## ✅ Better
-- Logic - create a new vector and iterate through the original vector, add into the result vector if the number is not equl to the last element of the vector
+- Logic - create a new vector to store result, sort the original vector and iterate through that, add into the result vector if the number is not equl to the last element of the vector
 - TIME COMPLEXITY - O(N)
 - SPACE COMPLEXITY - O(N)
 
