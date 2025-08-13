@@ -7,8 +7,8 @@
 
 ## ✅ Better
 - Logic - create a new vector to store result, sort the original vector and iterate through that, add into the result vector if the number is not equl to the last element of the vector
-- TIME COMPLEXITY - O(N)
-- SPACE COMPLEXITY - O(N)
+- TIME COMPLEXITY - O(LogN)
+- SPACE COMPLEXITY - O(N) - result vector
 
 
 ## ✅ Optimal
