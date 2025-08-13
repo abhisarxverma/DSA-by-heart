@@ -11,7 +11,7 @@ the pair give the required sum ,then return the vector having the index of that 
 - TIME COMPLEXITY - O(N^2) - Double looping
 - SPACE COMPLEXITY - O(1)
 
-## ✅ Better approach
+## ✅ Optimal approach
 
 - LOGIC - Using a hashmap, while looping storing the numbers visited and for the current loop number
 we will check if the number exist in the hashmap , if yes, then return the current number index and 
@@ -21,7 +21,7 @@ hashmap then simply add the current loop number to hashmap with index, and pass 
 - TIME COMPLEXITY - O(N)
 - SPACE COMPLEXITY - O(N) - hashmap
 
-## ✅ Optimal approach ***( To get the answer pair indexes the better approach is the optimal )***
+## ✅ Optimal approach 2 ***( This can give true or false rather than indexes )***
 
 - LOGIC - Sort the array, then take two pointers one at start and one at end, compare the sum of the numbers at the two pointers
 to the target sum, if the current sum is low, then move the first pointer forward, otherwise move the last pointer backward

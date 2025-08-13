@@ -24,7 +24,7 @@ def two_sum_brute( array : List[int], sum : int ) -> tuple[int]:
     return (-1, -1)
 
 '''
-Better Approach
+Optimal Approach
 ---------------------
 LOGIC - Using a hashmap, while looping storing the numbers visited and for the current loop number
 we will check if the number exist in the hashmap , if yes, then return the current number index and 
@@ -49,7 +49,7 @@ def two_sum_better( array : List[int], sum : int ) -> tuple[int]:
     return (-1, -1)
 
 '''
-Optimal Approach
+Optimal Approach 2
 ---------------------
 LOGIC - Sort the array, then take two pointers one at start and one at end, compare the sum of the numbers at the two pointers
 to the target sum, if the current sum is low, then move the first pointer forward, otherwise move the last pointer backward
