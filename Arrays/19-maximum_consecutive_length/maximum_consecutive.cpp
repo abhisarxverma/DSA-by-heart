@@ -46,7 +46,7 @@ while iterating, check if the current number - 1, is equal to the last smaller t
 the count, and if we encounter any duplicate to the last smaller we will pass it, if we find any number not equal to the 
 last smaller we will again make the count 1 and make that number the last smaller.
 
-TIME COMPLEXITY - O(N log N) 
+TIME COMPLEXITY - O(N + log N) 
 SPACE COMPLEXITY - O(1)
 */
 
@@ -76,7 +76,7 @@ Optimal Approach
 ---------------------
 LOGIC - Take a set, store all the numbers in it, then loop over the array, check if the number does not have a 
 consecutive lesser, then it may be the first number of the consecutive sequence then go ahead and find the longest
-length of the consecutive sequenct that number gives.
+length of the consecutive sequence that number gives.
 
 TIME COMPLEXITY - O(3N) = O(N) 
 SPACE COMPLEXITY - O(N) set
