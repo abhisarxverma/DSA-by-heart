@@ -15,22 +15,18 @@ def pow_loop_brute(x: int, n: int):
 
 # Time complexity - O(Log N)
 def pow_loop_optimal(x: int, n: int):
-
     ans = 1
-    nn = n
-    if n < 0: nn = -1 * n
+    nn = abs(n)
 
     while nn:
-
         if nn % 2:
-            ans *= x    # x^n = x * x^n-1
+            ans *= x
             nn -= 1
         else:
-            x = x*x     # x^n = (x^2)^n/2
-            nn /= 2
+            x *= x
+            nn //= 2
 
-    if n < 0: ans = 1.0 / ans
-    return ans
+    return (1.0 / ans) if n < 0 else ans
 
 # Recursion
 # Time complexity - O(Log N)
