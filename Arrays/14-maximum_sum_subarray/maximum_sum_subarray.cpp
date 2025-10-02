@@ -39,14 +39,14 @@ TIME COMPLEXITY - O(N)
 SPACE COMPLEXITY - O(1)
 */
 
-int maximum_sum_subarray_optimal( vector<int> array ){
+long long maximum_sum_subarray_optimal( vector<int> array ){
     int n = array.size();
     long long final_sum = LLONG_MIN;
     long long sum = 0;
     for (auto num : array){
         sum += num;
-        if (sum < 0) sum = 0;
         final_sum = max(final_sum, sum);
+        if (sum < 0) sum = 0;
     }
     return final_sum;
 }

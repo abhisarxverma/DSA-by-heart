@@ -14,7 +14,7 @@ SPACE COMPLEXITY - O(N) - to store the sorted array
 
 int find_second_smallest_brute( vector<int> array ){
     sort(array.begin(), array.end());
-    return array.size() > 1 ? array[array.size()-2] : NULL;
+    return array.size() > 1 ? array[2] : NULL;
 }
 
 /*
