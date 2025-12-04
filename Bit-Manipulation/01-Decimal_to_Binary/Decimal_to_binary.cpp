@@ -11,17 +11,17 @@ using namespace std;
 string decimal_to_binary(int n){
     string res("");
     while (n > 0){
-        res.push_back((char)n%2);
+        res.push_back((n%2) + '0');
         n /= 2;
     }
     reverse(res.begin(), res.end());
-    return res;
+    return res.empty() ? "0" : res;
 }
 
 // RECURSIVE
 
 string decimal_to_binary_recursive(int n){
-    if (n <= 1) return string("");
+    if (n <= 1) return to_string(n);
     return decimal_to_binary(n/2) + to_string(n%2);
 }
 
